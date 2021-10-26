@@ -1,0 +1,242 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "activity": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "date": {
+                        "bsonType": "string"
+                    },
+                    "image": {
+                        "bsonType": "object",
+                        "properties": {
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "date": {
+                                "bsonType": "date"
+                            },
+                            "picture": {
+                                "bsonType": "binData"
+                            },
+                            "thumbNail": {
+                                "bsonType": "binData"
+                            }
+                        },
+                        "required": [
+                            "_id",
+                            "date"
+                        ],
+                        "title": "Photo"
+                    },
+                    "info": {
+                        "bsonType": "string"
+                    },
+                    "type": {
+                        "bsonType": "string"
+                    },
+                    "userAvatar": {
+                        "bsonType": "object",
+                        "properties": {
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "date": {
+                                "bsonType": "date"
+                            },
+                            "picture": {
+                                "bsonType": "binData"
+                            },
+                            "thumbNail": {
+                                "bsonType": "binData"
+                            }
+                        },
+                        "required": [
+                            "_id",
+                            "date"
+                        ],
+                        "title": "Photo"
+                    }
+                },
+                "required": [
+                    "type"
+                ],
+                "title": "Event"
+            }
+        },
+        "address": {
+            "bsonType": "object",
+            "properties": {
+                "city": {
+                    "bsonType": "string"
+                },
+                "country": {
+                    "bsonType": "string"
+                },
+                "gateCode": {
+                    "bsonType": "string"
+                },
+                "state": {
+                    "bsonType": "string"
+                },
+                "street": {
+                    "bsonType": "string"
+                },
+                "zip": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Address"
+        },
+        "assignedCrew": {
+            "bsonType": "object",
+            "properties": {
+                "members": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "name": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Crew"
+        },
+        "category": {
+            "bsonType": "string"
+        },
+        "client": {
+            "bsonType": "string"
+        },
+        "completionDate": {
+            "bsonType": "date"
+        },
+        "crew": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "estimatedTimeToComplete": {
+            "bsonType": "long"
+        },
+        "isActive": {
+            "bsonType": "string"
+        },
+        "materials": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "SKU": {
+                        "bsonType": "string"
+                    },
+                    "color": {
+                        "bsonType": "string"
+                    },
+                    "itemDescription": {
+                        "bsonType": "string"
+                    },
+                    "photo": {
+                        "bsonType": "object",
+                        "properties": {
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "date": {
+                                "bsonType": "date"
+                            },
+                            "picture": {
+                                "bsonType": "binData"
+                            },
+                            "thumbNail": {
+                                "bsonType": "binData"
+                            }
+                        },
+                        "required": [
+                            "_id",
+                            "date"
+                        ],
+                        "title": "Photo"
+                    },
+                    "price": {
+                        "bsonType": "double"
+                    },
+                    "quantity": {
+                        "bsonType": "double"
+                    },
+                    "type": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Material"
+            }
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "partition": {
+            "bsonType": "string"
+        },
+        "startDate": {
+            "bsonType": "date"
+        },
+        "startTime": {
+            "bsonType": "date"
+        },
+        "todo": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "_id": {
+                        "bsonType": "string"
+                    },
+                    "complete": {
+                        "bsonType": "bool"
+                    },
+                    "completionDate": {
+                        "bsonType": "date"
+                    },
+                    "crewMember": {
+                        "bsonType": "string"
+                    },
+                    "dateCreated": {
+                        "bsonType": "date"
+                    },
+                    "name": {
+                        "bsonType": "string"
+                    },
+                    "needed": {
+                        "bsonType": "long"
+                    },
+                    "onHand": {
+                        "bsonType": "long"
+                    }
+                },
+                "required": [
+                    "_id",
+                    "name",
+                    "complete"
+                ],
+                "title": "TodoItem"
+            }
+        }
+    },
+    "required": [
+        "_id",
+        "partition",
+        "client",
+        "category"
+    ],
+    "title": "Project"
+}

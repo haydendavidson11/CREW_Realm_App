@@ -1,0 +1,11 @@
+{
+    "name": "gcm",
+    "type": "gcm",
+    "config": {
+        "senderId": "218355926044"
+    },
+    "secret_config": {
+        "apiKey": "FireBase"
+    },
+    "version": 1
+}

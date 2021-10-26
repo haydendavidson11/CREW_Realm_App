@@ -1,0 +1,38 @@
+{
+    "anon-user": {
+        "name": "anon-user",
+        "type": "anon-user",
+        "disabled": true
+    },
+    "api-key": {
+        "name": "api-key",
+        "type": "api-key",
+        "disabled": true
+    },
+    "local-userpass": {
+        "name": "local-userpass",
+        "type": "local-userpass",
+        "config": {
+            "autoConfirm": false,
+            "confirmEmailSubject": "Confirm your Email for Crew",
+            "emailConfirmationUrl": "https://stitch-statichosting-prod.s3.amazonaws.com/607481d72fbaf9ca6b527a59/ConfirmEmail.html",
+            "resetFunctionName": "resetFunc",
+            "resetPasswordSubject": "Reset your password on for CREW.",
+            "resetPasswordUrl": "https://stitch-statichosting-prod.s3.amazonaws.com/607481d72fbaf9ca6b527a59/ResetPassword.html",
+            "runConfirmationFunction": false,
+            "runResetFunction": false
+        },
+        "disabled": false
+    },
+    "oauth2-apple": {
+        "name": "oauth2-apple",
+        "type": "oauth2-apple",
+        "config": {
+            "clientId": "com.haydendavidson.COOL-NAME-HERE"
+        },
+        "secret_config": {
+            "clientSecret": "CrewSecret"
+        },
+        "disabled": true
+    }
+}

@@ -1,0 +1,339 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "address": {
+            "bsonType": "object",
+            "properties": {
+                "city": {
+                    "bsonType": "string"
+                },
+                "country": {
+                    "bsonType": "string"
+                },
+                "gateCode": {
+                    "bsonType": "string"
+                },
+                "state": {
+                    "bsonType": "string"
+                },
+                "street": {
+                    "bsonType": "string"
+                },
+                "zip": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Address"
+        },
+        "admins": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "avatarImage": {
+            "bsonType": "object",
+            "properties": {
+                "_id": {
+                    "bsonType": "string"
+                },
+                "date": {
+                    "bsonType": "date"
+                },
+                "picture": {
+                    "bsonType": "binData"
+                },
+                "thumbNail": {
+                    "bsonType": "binData"
+                }
+            },
+            "required": [
+                "_id",
+                "date"
+            ],
+            "title": "Photo"
+        },
+        "companyDescription": {
+            "bsonType": "string"
+        },
+        "companyName": {
+            "bsonType": "string"
+        },
+        "crews": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "members": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "name": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Crew"
+            }
+        },
+        "foundedDate": {
+            "bsonType": "string"
+        },
+        "founder": {
+            "bsonType": "string"
+        },
+        "jobs": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "_id": {
+                        "bsonType": "string"
+                    },
+                    "assignedCrew": {
+                        "bsonType": "object",
+                        "properties": {
+                            "members": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "name": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Crew"
+                    },
+                    "comments": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "image": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "bsonType": "string"
+                                        },
+                                        "date": {
+                                            "bsonType": "date"
+                                        },
+                                        "picture": {
+                                            "bsonType": "binData"
+                                        },
+                                        "thumbNail": {
+                                            "bsonType": "binData"
+                                        }
+                                    },
+                                    "required": [
+                                        "_id",
+                                        "date"
+                                    ],
+                                    "title": "Photo"
+                                },
+                                "message": {
+                                    "bsonType": "string"
+                                },
+                                "postDate": {
+                                    "bsonType": "string"
+                                },
+                                "user": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "required": [],
+                            "title": "Comment"
+                        }
+                    },
+                    "completionDate": {
+                        "bsonType": "date"
+                    },
+                    "estimatedTimeToComplete": {
+                        "bsonType": "long"
+                    },
+                    "isActive": {
+                        "bsonType": "string"
+                    },
+                    "materials": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "SKU": {
+                                    "bsonType": "string"
+                                },
+                                "color": {
+                                    "bsonType": "string"
+                                },
+                                "itemDescription": {
+                                    "bsonType": "string"
+                                },
+                                "photo": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "bsonType": "string"
+                                        },
+                                        "date": {
+                                            "bsonType": "date"
+                                        },
+                                        "picture": {
+                                            "bsonType": "binData"
+                                        },
+                                        "thumbNail": {
+                                            "bsonType": "binData"
+                                        }
+                                    },
+                                    "required": [
+                                        "_id",
+                                        "date"
+                                    ],
+                                    "title": "Photo"
+                                },
+                                "price": {
+                                    "bsonType": "double"
+                                },
+                                "quantity": {
+                                    "bsonType": "double"
+                                },
+                                "type": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "required": [],
+                            "title": "Material"
+                        }
+                    },
+                    "startDate": {
+                        "bsonType": "date"
+                    },
+                    "startTime": {
+                        "bsonType": "date"
+                    }
+                },
+                "required": [
+                    "_id"
+                ],
+                "title": "Job"
+            }
+        },
+        "managers": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "materials": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "SKU": {
+                        "bsonType": "string"
+                    },
+                    "color": {
+                        "bsonType": "string"
+                    },
+                    "itemDescription": {
+                        "bsonType": "string"
+                    },
+                    "photo": {
+                        "bsonType": "object",
+                        "properties": {
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "date": {
+                                "bsonType": "date"
+                            },
+                            "picture": {
+                                "bsonType": "binData"
+                            },
+                            "thumbNail": {
+                                "bsonType": "binData"
+                            }
+                        },
+                        "required": [
+                            "_id",
+                            "date"
+                        ],
+                        "title": "Photo"
+                    },
+                    "price": {
+                        "bsonType": "double"
+                    },
+                    "quantity": {
+                        "bsonType": "double"
+                    },
+                    "type": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Material"
+            }
+        },
+        "members": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "partition": {
+            "bsonType": "string"
+        },
+        "phoneNumber": {
+            "bsonType": "string"
+        },
+        "schedule": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "EndTime": {
+                        "bsonType": "date"
+                    },
+                    "_id": {
+                        "bsonType": "string"
+                    },
+                    "complete": {
+                        "bsonType": "bool"
+                    },
+                    "crewMember": {
+                        "bsonType": "string"
+                    },
+                    "date": {
+                        "bsonType": "date"
+                    },
+                    "startTime": {
+                        "bsonType": "date"
+                    },
+                    "type": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [
+                    "_id",
+                    "type",
+                    "complete"
+                ],
+                "title": "Shift"
+            }
+        }
+    },
+    "required": [
+        "_id",
+        "partition",
+        "companyName",
+        "companyDescription"
+    ],
+    "title": "Company"
+}

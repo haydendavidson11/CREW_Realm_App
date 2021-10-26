@@ -1,0 +1,21 @@
+{
+    "id": "608acb57c999938c92e6f8d4",
+    "name": "userCollectionWrite",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "INSERT",
+            "UPDATE",
+            "DELETE"
+        ],
+        "database": "Cool_Name_Here",
+        "collection": "User",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": false,
+        "unordered": false
+    },
+    "disabled": false
+}

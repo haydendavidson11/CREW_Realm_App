@@ -1,0 +1,19 @@
+{
+    "id": "60a7ddb08375ef168f2b24d8",
+    "name": "AddClientFromCSV",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "INSERT"
+        ],
+        "database": "Cool_Name_Here",
+        "collection": "CSVClient",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": false,
+        "unordered": false
+    },
+    "disabled": false
+}

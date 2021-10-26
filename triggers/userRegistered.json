@@ -1,0 +1,12 @@
+{
+    "id": "6074b9189bb7390c6fcb916e",
+    "name": "userRegistered",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "CREATE",
+        "providers": [
+            "local-userpass"
+        ]
+    },
+    "disabled": false
+}

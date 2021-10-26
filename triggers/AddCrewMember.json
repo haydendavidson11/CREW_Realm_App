@@ -1,0 +1,12 @@
+{
+    "id": "608aee8243128c6adde7d8ba",
+    "name": "AddCrewMember",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "CREATE",
+        "providers": [
+            "local-userpass"
+        ]
+    },
+    "disabled": true
+}

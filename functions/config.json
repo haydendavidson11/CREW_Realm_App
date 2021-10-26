@@ -1,0 +1,72 @@
+[
+    {
+        "name": "resetFunc",
+        "private": false,
+        "can_evaluate": {}
+    },
+    {
+        "name": "createNewUserDoc",
+        "private": true,
+        "run_as_system": true,
+        "can_evaluate": {}
+    },
+    {
+        "name": "canReadPartition",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "canWritePartition",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "userDocsWrittenTo",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "addCrewMemberDoc",
+        "private": true,
+        "run_as_system": true
+    },
+    {
+        "name": "AddClientFromCSV",
+        "private": true,
+        "run_as_system": true,
+        "can_evaluate": {}
+    },
+    {
+        "name": "RequestStatusChanged",
+        "private": true,
+        "run_as_system": true,
+        "can_evaluate": {}
+    },
+    {
+        "name": "CompanyAdded",
+        "private": true
+    },
+    {
+        "name": "CheckForRequest",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "SendRequestPushNotification",
+        "private": false,
+        "run_as_system": true
+    },
+    {
+        "name": "RequestAdded",
+        "private": true
+    },
+    {
+        "name": "SwitchNotificationTypeAndSend",
+        "private": false
+    },
+    {
+        "name": "RemoveUserFromCompany",
+        "private": false,
+        "run_as_system": true
+    }
+]

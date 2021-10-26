@@ -1,0 +1,79 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "company": {
+            "bsonType": "string"
+        },
+        "crewMember": {
+            "bsonType": "string"
+        },
+        "dateCreated": {
+            "bsonType": "date"
+        },
+        "partition": {
+            "bsonType": "string"
+        },
+        "recipient": {
+            "bsonType": "string"
+        },
+        "requestDescription": {
+            "bsonType": "string"
+        },
+        "role": {
+            "bsonType": "string"
+        },
+        "sender": {
+            "bsonType": "string"
+        },
+        "shift": {
+            "bsonType": "object",
+            "properties": {
+                "EndTime": {
+                    "bsonType": "date"
+                },
+                "_id": {
+                    "bsonType": "string"
+                },
+                "complete": {
+                    "bsonType": "bool"
+                },
+                "crewMember": {
+                    "bsonType": "string"
+                },
+                "date": {
+                    "bsonType": "date"
+                },
+                "startTime": {
+                    "bsonType": "date"
+                },
+                "type": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [
+                "_id",
+                "type",
+                "complete"
+            ],
+            "title": "Shift"
+        },
+        "status": {
+            "bsonType": "string"
+        },
+        "type": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "partition",
+        "type",
+        "status",
+        "requestDescription",
+        "dateCreated"
+    ],
+    "title": "Request"
+}

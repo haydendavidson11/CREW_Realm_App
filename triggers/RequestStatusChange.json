@@ -1,0 +1,20 @@
+{
+    "id": "60ef30783fce205d4425479f",
+    "name": "RequestStatusChange",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "UPDATE",
+            "INSERT"
+        ],
+        "database": "Cool_Name_Here",
+        "collection": "Request",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": false,
+        "unordered": false
+    },
+    "disabled": false
+}

@@ -1,0 +1,7 @@
+{
+    "enabled": true,
+    "custom_domain": "mycrew.app",
+    "app_default_domain": "cool-name-here-cncln-ojoyn.mongodbstitch.com",
+    "default_error_path": "",
+    "default_error_code": ""
+}

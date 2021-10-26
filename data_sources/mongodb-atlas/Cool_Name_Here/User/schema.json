@@ -1,0 +1,185 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "companyID": {
+            "bsonType": "string"
+        },
+        "deviceToken": {
+            "bsonType": "string"
+        },
+        "partition": {
+            "bsonType": "string"
+        },
+        "role": {
+            "bsonType": "string"
+        },
+        "userName": {
+            "bsonType": "string"
+        },
+        "userPreferences": {
+            "bsonType": "object",
+            "properties": {
+                "address": {
+                    "bsonType": "object",
+                    "properties": {
+                        "city": {
+                            "bsonType": "string"
+                        },
+                        "country": {
+                            "bsonType": "string"
+                        },
+                        "gateCode": {
+                            "bsonType": "string"
+                        },
+                        "state": {
+                            "bsonType": "string"
+                        },
+                        "street": {
+                            "bsonType": "string"
+                        },
+                        "zip": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Address"
+                },
+                "availability": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "dates": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "date"
+                                }
+                            },
+                            "type": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [
+                            "_id",
+                            "type"
+                        ],
+                        "title": "AvailableDays"
+                    }
+                },
+                "avatarImage": {
+                    "bsonType": "object",
+                    "properties": {
+                        "_id": {
+                            "bsonType": "string"
+                        },
+                        "date": {
+                            "bsonType": "date"
+                        },
+                        "picture": {
+                            "bsonType": "binData"
+                        },
+                        "thumbNail": {
+                            "bsonType": "binData"
+                        }
+                    },
+                    "required": [
+                        "_id",
+                        "date"
+                    ],
+                    "title": "Photo"
+                },
+                "bio": {
+                    "bsonType": "string"
+                },
+                "displayName": {
+                    "bsonType": "string"
+                },
+                "firstName": {
+                    "bsonType": "string"
+                },
+                "lastName": {
+                    "bsonType": "string"
+                },
+                "phoneNumber": {
+                    "bsonType": "string"
+                },
+                "schedule": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "EndTime": {
+                                "bsonType": "date"
+                            },
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "complete": {
+                                "bsonType": "bool"
+                            },
+                            "crewMember": {
+                                "bsonType": "string"
+                            },
+                            "date": {
+                                "bsonType": "date"
+                            },
+                            "startTime": {
+                                "bsonType": "date"
+                            },
+                            "type": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [
+                            "_id",
+                            "type",
+                            "complete"
+                        ],
+                        "title": "Shift"
+                    }
+                },
+                "shareContactInfo": {
+                    "bsonType": "bool"
+                },
+                "timeSheet": {
+                    "bsonType": "object",
+                    "properties": {
+                        "date": {
+                            "bsonType": "date"
+                        },
+                        "hoursWorked": {
+                            "bsonType": "double"
+                        },
+                        "owed": {
+                            "bsonType": "double"
+                        },
+                        "paidInFull": {
+                            "bsonType": "bool"
+                        },
+                        "paidYTD": {
+                            "bsonType": "double"
+                        }
+                    },
+                    "required": [],
+                    "title": "TimeSheet"
+                }
+            },
+            "required": [
+                "shareContactInfo"
+            ],
+            "title": "UserPreferences"
+        }
+    },
+    "required": [
+        "_id",
+        "partition",
+        "userName"
+    ],
+    "title": "User"
+}
